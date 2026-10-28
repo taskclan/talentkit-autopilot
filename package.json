@@ -1,0 +1,38 @@
+{
+  "name": "@taskclan/kin-autopilot",
+  "version": "0.1.0",
+  "description": "Thin TypeScript client for Kin Autopilot (TalentKit extension queue / fill-data / report).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "sdk",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskclan/talentkit-autopilot.git"
+  },
+  "keywords": [
+    "talentkit",
+    "kin",
+    "autopilot",
+    "job-search"
+  ]
+}
